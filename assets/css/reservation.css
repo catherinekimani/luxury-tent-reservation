@@ -1,0 +1,264 @@
+/* Reservation Page Styles */
+.reservation-main {
+	padding: 2rem 0;
+	background-color: #f8f9fa;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 100%;
+	padding: 0 40px;
+}
+
+.reservation-header {
+	text-align: left;
+	margin-bottom: 2rem;
+}
+
+.reservation-header h1 {
+	font-size: 2rem;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 0.5rem;
+}
+
+.reservation-header p {
+	font-size: 1rem;
+	color: #666;
+	margin: 0;
+}
+
+/* Two Column Layout */
+.reservation-layout {
+	display: grid;
+	grid-template-columns: 1fr 400px;
+	gap: 3rem;
+	align-items: start;
+}
+
+/* Left Column - Guest Form */
+.guest-form-section {
+	background: white;
+	border-radius: 8px;
+	padding: 0;
+}
+
+.primary-guest-section h2 {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: #333;
+	margin-bottom: 1.5rem;
+}
+
+.guest-info-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+	margin-bottom: 1.5rem;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.form-group label {
+	font-weight: 500;
+	color: #333;
+	margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+}
+
+.form-group input {
+	padding: 0.75rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 1rem;
+	transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+	outline: none;
+	border-color: #dc2626;
+	box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.1);
+}
+
+.form-note {
+	background-color: #f8f9fa;
+	padding: 1rem;
+	border-radius: 6px;
+	margin-bottom: 1.5rem;
+}
+
+.form-note p {
+	margin: 0;
+	color: #666;
+	font-size: 0.9rem;
+	line-height: 1.4;
+}
+
+.form-actions {
+	display: flex;
+	gap: 1rem;
+}
+
+.complete-reservation-btn {
+	background-color: #dc2626;
+	color: white;
+	padding: 0.75rem 1.5rem;
+	border: none;
+	border-radius: 4px;
+	font-size: 1rem;
+	font-weight: 500;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.complete-reservation-btn:hover {
+	background-color: #b91c1c;
+}
+
+.complete-reservation-btn:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+.add-guest-btn {
+	background: none;
+	border: 1px solid #dc2626;
+	color: #dc2626;
+	padding: 0.75rem 1.5rem;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+	transition: all 0.3s ease;
+}
+
+.add-guest-btn:hover {
+	background-color: #dc2626;
+	color: white;
+}
+
+/* Right Column - Booking Summary */
+.booking-summary {
+	position: sticky;
+	top: 2rem;
+}
+
+.summary-card {
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.tent-summary {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	padding: 1.5rem;
+	border-bottom: 1px solid #eee;
+}
+
+.tent-image {
+	flex-shrink: 0;
+}
+
+.tent-image img {
+	width: 80px;
+	height: 60px;
+	object-fit: cover;
+	border-radius: 6px;
+}
+
+.tent-title h3 {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #333;
+	margin: 0 0 0.25rem 0;
+}
+
+.camp-label {
+	font-size: 0.8rem;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+}
+
+.booking-details {
+	padding: 1.5rem;
+}
+
+.detail-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 1rem;
+}
+
+.detail-row:last-child {
+	margin-bottom: 0;
+}
+
+.detail-row label {
+	font-size: 0.9rem;
+	color: #666;
+	font-weight: 500;
+}
+
+.date-display {
+	font-size: 0.9rem;
+	color: #333;
+	font-weight: 500;
+}
+
+.detail-row select {
+	padding: 0.5rem;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 0.9rem;
+	background: white;
+	min-width: 200px;
+}
+
+.detail-row select:focus {
+	outline: none;
+	border-color: #dc2626;
+}
+
+.price-summary {
+	background-color: #f8f9fa;
+	padding: 1.5rem;
+	border-top: 1px solid #eee;
+}
+
+.total-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.total-label {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #333;
+}
+
+.total-price {
+	font-size: 1.3rem;
+	font-weight: 700;
+	color: #333;
+}
+
+/* Error Styles */
+.form-group.error input {
+	border-color: #dc2626;
+}
+
+.error-message {
+	color: #dc2626;
+	font-size: 0.8rem;
+	margin-top: 0.25rem;
+}

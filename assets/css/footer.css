@@ -1,0 +1,146 @@
+/**
+ * Footer Styles
+ */
+
+/* Footer Container */
+.site-footer {
+	background-color: #fff;
+	color: #333;
+	padding: 40px 0;
+	margin: 40px;
+	margin-top: 80px;
+}
+
+.footer-container {
+	width: 100%;
+	margin: 0;
+	padding: 0 20px;
+}
+
+/* Footer Content Grid */
+.footer-content {
+	display: grid;
+	grid-template-columns: 250px 1fr 1fr 300px;
+	gap: 60px;
+	align-items: start;
+	width: 100%;
+}
+
+/* Footer Brand Section */
+.footer-brand {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.footer-logo img {
+	max-height: 45px;
+	width: auto;
+}
+
+/* Social Media Links */
+.footer-social {
+	display: flex;
+	gap: 12px;
+}
+
+.social-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 32px;
+	height: 32px;
+	color: #666;
+	transition: color 0.3s ease;
+	text-decoration: none;
+}
+
+.social-link:hover {
+	color: #c81b1b;
+}
+
+.social-icon svg {
+	width: 18px;
+	height: 18px;
+	fill: currentColor;
+}
+
+/* Footer Columns */
+.footer-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-column-title {
+	color: #333;
+	font-size: 16px;
+	font-weight: 600;
+	margin: 0 0 20px 0;
+	text-transform: capitalize;
+}
+
+.footer-link-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.footer-link-list a {
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 1.4;
+	transition: color 0.3s ease;
+}
+
+.footer-link-list a:hover {
+	color: #c81b1b;
+}
+
+/* Location Section */
+.footer-location {
+	display: flex;
+	flex-direction: column;
+}
+
+.location-map {
+	margin-bottom: 15px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.location-map img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.location-info {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.location-item {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #666;
+}
+
+.location-item strong {
+	color: #333;
+	font-weight: 600;
+}
+
+.location-item a {
+	color: #666;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.location-item a:hover {
+	color: #c81b1b;
+}
