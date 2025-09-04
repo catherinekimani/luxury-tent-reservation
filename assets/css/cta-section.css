@@ -1,0 +1,74 @@
+/* CTA Section */
+.cta-section {
+	position: relative;
+	padding: 60px 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin: 40px;
+}
+
+.cta-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+
+.cta-container {
+	position: relative;
+	z-index: 2;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 100%;
+}
+
+.cta-content {
+	max-width: 1200px;
+	color: white;
+	padding: 40px 0;
+	margin: 0;
+	flex: 0 0 auto;
+}
+
+.cta-title {
+	font-size: 2.5rem;
+	font-weight: 400;
+	font-style: italic;
+	margin: 0 0 30px 0;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.cta-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	background: #c81b1b;
+	color: white;
+	padding: 16px 28px;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 600;
+	font-size: 16px;
+	transition: all 0.3s ease;
+}
+
+.cta-btn:hover {
+	background: #a01616;
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tent-icon {
+	width: 16px;
+	height: 16px;
+}
